@@ -17,9 +17,6 @@ body {
    * CSS image reference example.
    */
   background-image: url('./images/bg-pattern.png');
-
-  background-color: blueviolet;
-  /* color: #ff0000; */
   font-size: 2em;
 }
 
