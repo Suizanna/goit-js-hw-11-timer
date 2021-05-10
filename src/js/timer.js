@@ -28,7 +28,7 @@ const refs = {
       const time =  this.getTimeComponents(differenceTime);
       console.log(time);
 
-      this.onTimer(time);      //интерфейс отсчет
+      this.onTimer(time);      
       }, 1000);
         }
 
