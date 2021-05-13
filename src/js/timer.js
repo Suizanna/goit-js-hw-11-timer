@@ -2,7 +2,7 @@
 
 class CountdownTimer  {   //занимается только подчетом. не обновляет интерфес!
   constructor({ selector, targetDate}) {
-     this.intervalId = null;
+    this.intervalId = null;
     this.selector = document.querySelector(selector);
     this.targetDate = targetDate;
   };
