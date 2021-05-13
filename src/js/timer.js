@@ -2,13 +2,14 @@
 
 class CountdownTimer  {   //занимается только подчетом. не обновляет интерфес!
   constructor({ selector, targetDate}) {
+     this.intervalId = null;
     this.selector = document.querySelector(selector);
     this.targetDate = targetDate;
   };
 
   start() { 
     console.log(this.selector.querySelector('[data-value="days"]'));                   
-  setInterval(() => {     
+  this.intervalId = setInterval(() => {     
   const time = this.targetDate - Date.now(); 
   const days = Math.floor(time / (1000 * 60 * 60 * 24));
   const hours = Math.floor((time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 
